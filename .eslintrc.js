@@ -7,8 +7,9 @@ module.exports = {
   },
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
+    "plugin:react/recommended",    
     "plugin:cypress/recommended"
+
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -18,25 +19,22 @@ module.exports = {
     "sourceType": "module"
   },
   "plugins": [
-    "react", "jest"
+    "react", "jest", "cypress"
   ],
   "rules": {
-    "indent": [
-      "error",
-        2
-      ],
+    "indent": "off",
     "linebreak-style": [
       "error",
       "unix"
     ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "never"
-    ],
+    // "quotes": [
+    //   "error",
+    //   "single"
+    // ],
+    // "semi": [
+    //   "error",
+    //   "never"
+    // ],
     "eqeqeq": "error",
     "no-trailing-spaces": "error",
     "object-curly-spacing": [
@@ -45,7 +43,7 @@ module.exports = {
     "arrow-spacing": [
       "error", { "before": true, "after": true }
     ],
-    "no-console": "error",
+    // "no-console": "error",
     "react/prop-types": 0
   }
 }
